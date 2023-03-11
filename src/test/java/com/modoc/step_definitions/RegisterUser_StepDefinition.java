@@ -43,7 +43,6 @@ public class RegisterUser_StepDefinition {
     }
     @Given("Enter name and email address")
     public void enter_name_and_email_address() {
-
         registerUser.nameBox.sendKeys(faker.name().lastName());
         registerUser.emailBox.sendKeys(faker.internet().emailAddress());
 
@@ -55,7 +54,6 @@ public class RegisterUser_StepDefinition {
     }
     @Given("Verify that ENTER ACCOUNT INFORMATION is visible")
     public void verify_that_enter_account_information_is_visible() {
-        String expectedAccountInformationVisible = "Enter Account Information";
         Assert.assertTrue(registerUser.enterAccountInformation.isDisplayed());
 
 
