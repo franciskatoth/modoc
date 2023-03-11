@@ -25,7 +25,7 @@ public class RegisterUser_StepDefinition {
     }
     @Given("Verify that home page is visible successfully")
     public void verify_that_home_page_is_visible_successfully() {
-        System.out.println("Home page is visible successfully");
+        Assert.assertTrue(registerUser.homePage.isDisplayed());
 
     }
     @Given("Click on Signup \\/ Login button")

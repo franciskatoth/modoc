@@ -12,6 +12,9 @@ public class RegisterUser {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    @FindBy(xpath = "//i[@class='fa fa-home']")
+    public WebElement homePage;
+
    @FindBy(xpath = "//a[@href='/login']")
     public WebElement  signupLoginBtn;
 
