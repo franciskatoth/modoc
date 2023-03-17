@@ -19,10 +19,12 @@ public class RegisterUser_StepDefinition {
         System.out.println("Browser launch");
 
     }
-    @Given("Navigate to url http:\\/automationexercise.com")
-    public void navigate_to_url_http_automationexercise_com() {
-        Driver.getDriver().get("http://automationexercise.com");
+
+    @Given("Navigate to url https:\\/\\/automationexercise.com")
+    public void navigate_to_url_https_automationexercise_com() {
+       Driver.getDriver().get("https://automationexercise.com");
     }
+
     @Given("Verify that home page is visible successfully")
     public void verify_that_home_page_is_visible_successfully() {
         Assert.assertTrue(registerUser.homePage.isDisplayed());

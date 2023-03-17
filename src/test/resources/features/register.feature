@@ -2,7 +2,7 @@ Feature: User is able to register
 @smoke
   Scenario: User is able to create account
     Given Launch browser
-    And Navigate to url http:/automationexercise.com
+    And Navigate to url https://automationexercise.com
     Then Verify that home page is visible successfully
     And Click on Signup / Login button
     Then Verify New User Signup! is visible

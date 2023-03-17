@@ -2,7 +2,7 @@ Feature: User is able to register
 @smoke
   Scenario: User is able to create account
     Given Launch browser
-    And Navigate to url http:/automationexercise.com
+    And Navigate to url https://automationexercise.com
     Then Verify that home page is visible successfully
     And Click on Signup / Login button
     Then Verify New User Signup! is visible
@@ -17,5 +17,5 @@ Feature: User is able to register
     And Verify that ACCOUNT CREATED! is visible
     Then Click Continue button
     And Verify that Logged in as username is visible
-    Then Click Delete Account button
+    When Click Delete Account button
     Then Verify that ACCOUNT DELETED! is visible and click Continue button
